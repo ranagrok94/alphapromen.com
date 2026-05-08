@@ -1628,4 +1628,38 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5284WH7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+	<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Captura os parâmetros da URL atual (Página B)
+    // Exemplo: ?utm_source=facebook&utm_campaign=vsl_blue_salt
+    var urlParams = window.location.search;
+
+    // Se existir algum parâmetro na URL, executa a rotina
+    if (urlParams) {
+        
+        // 2. Seleciona todos os links da página (tags <a>)
+        // Se quiser aplicar só aos botões de compra, mude "a" para a classe do botão, ex: ".botao-comprar"
+        var links = document.querySelectorAll("a");
+
+        links.forEach(function(link) {
+            var href = link.getAttribute("href");
+
+            // 3. Ignora links vazios, links âncora (ex: #top) e scripts (ex: javascript:void(0))
+            if (href && !href.startsWith("#") && !href.startsWith("javascript") && !href.startsWith("mailto") && !href.startsWith("tel")) {
+                
+                // 4. Verifica se o link de destino (Página C) já possui algum parâmetro
+                if (href.indexOf("?") !== -1) {
+                    // Se o link já tem um '?', trocamos o '?' da URL atual por '&' para não quebrar o link
+                    var paramsSemInterrogacao = urlParams.replace("?", "&");
+                    link.setAttribute("href", href + paramsSemInterrogacao);
+                } else {
+                    // Se o link está limpo, apenas adicionamos os parâmetros com '?'
+                    link.setAttribute("href", href + urlParams);
+                }
+            }
+        });
+    }
+});
+</script>
 </body></html>
