@@ -9,7 +9,6 @@
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <link rel="dns-prefetch" href="//static.cloudflareinsights.com">
 <link rel="dns-prefetch" href="//www.diginear.com">
-<link rel="preconnect" href="https://www.diginear.com" crossorigin>
 <meta name="theme-color" content="#0a0a0a">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:type" content="website">
@@ -18,7 +17,7 @@
 
 <!-- Fontes locais -->
 
-<link rel="preload" as="image" href="images/alpha-fuel-bottle.png" fetchpriority="high">
+<link rel="preload" as="image" href="images/alpha-fuel-bottle.png" fetchpriority="high" imagesizes="100vw" media="(min-width: 481px)">
 <link rel="preload" as="font" type="font/woff2" href="fonts/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/pxiEyp8kv8JHgFVrJJfecg.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAo.woff2" crossorigin>
@@ -37,7 +36,7 @@
 
 @font-face{font-family:Poppins;font-style:normal;font-weight:900;font-display:swap;src:url(fonts/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
-@font-face{font-family:Roboto;font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAo.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Roboto;font-style:normal;font-weight:400;font-stretch:100%;font-display:optional;src:url(fonts/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAo.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 </style>
 
 <style>
@@ -59,7 +58,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 /* ===================== SHIMMER KEYFRAMES ===================== */
 @keyframes shimmer { 0% { left: -75%; } 60% { left: 130%; } 100% { left: 130%; } }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes floatBottle { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes floatBottle { 0%, 100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(0,-12px,0); } }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: .2; } }
 
 /* ===== CONTENT-VISIBILITY FOR PERF ===== */
@@ -159,7 +158,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 
 .iw-hero-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(200,150,42,.55); }
 .iw-hero-btn-note { font-size: clamp(11px, 1.2vw, 12px); font-weight: 400; color: rgba(255,255,255,.4); letter-spacing: .02em; }
-.iw-hero-bottle { flex-shrink: 0; animation: floatBottle 4s ease-in-out infinite; }
+.iw-hero-bottle { flex-shrink: 0; animation: floatBottle 4s ease-in-out infinite; will-change: transform; }
 .iw-hero-bottle img {
   width: clamp(220px, 28vw, 380px); height: auto; display: block;
   filter: drop-shadow(0 20px 60px rgba(200,150,42,.25));
@@ -255,7 +254,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 .iw-benefits-grid { display: grid; grid-template-columns: 1fr 1fr auto; gap: 40px 48px; align-items: start; }
 .iw-benefit-item { display: flex; flex-direction: column; }
 .iw-benefit-icon-wrap { width: 72px; height: 72px; border-radius: 50%; background: #f6f6f6; border: 2px solid #e0e0e0; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; overflow: hidden; flex-shrink: 0; }
-.iw-benefit-icon-wrap img { width: 44px; height: 44px; object-fit: contain; }
+.iw-benefit-icon-wrap img { width: 44px; height: 44px; object-fit: contain; aspect-ratio: auto; }
 .iw-benefit-title { font-size: clamp(14px, 1.7vw, 16px); font-weight: 700; color: #111; margin-bottom: 10px; line-height: 1.3; }
 .iw-benefit-text { font-size: clamp(13px, 1.5vw, 15px); color: #555; line-height: 1.7; }
 .iw-benefits-img-col { grid-row: 1/3; grid-column: 3; display: flex; align-items: center; justify-content: center; align-self: stretch; }
@@ -286,7 +285,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 .iw-product-desc-btn:hover { background: #e5a700; transform: translateY(-2px); box-shadow: 0 12px 36px rgba(247,181,0,.5); }
 .iw-product-desc-btn svg { width: 20px; height: 20px; fill: #000; flex-shrink: 0; }
 .iw-product-desc-img { flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
-.iw-product-desc-img img { width: clamp(220px, 28vw, 360px); height: auto; display: block; filter: drop-shadow(0 16px 48px rgba(200,150,42,.2)); animation: floatBottle 4s ease-in-out infinite; }
+.iw-product-desc-img img { width: clamp(220px, 28vw, 360px); height: auto; display: block; filter: drop-shadow(0 16px 48px rgba(200,150,42,.2)); animation: floatBottle 4s ease-in-out infinite; will-change: transform; }
 
 /* ===================== MECHANISM ===================== */
 .iw-mechanism { background: #fff; padding: 72px 24px; }
@@ -659,7 +658,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
   .iw-hero { min-height: auto; }
   .iw-hero-inner { grid-template-columns: 1fr; padding: 32px 16px; gap: 0; display: flex; flex-direction: column; align-items: center; text-align: center; }
   .iw-hero-bottle { display: none; }
-  .iw-hero-bottle-mobile { display: flex; justify-content: center; margin: 24px 0; animation: floatBottle 4s ease-in-out infinite; }
+  .iw-hero-bottle-mobile { display: flex; justify-content: center; margin: 24px 0; }
   .iw-hero-bottle-mobile img { width: 150px; height: auto; filter: drop-shadow(0 16px 40px rgba(200,150,42,.25)); }
   .iw-hero-headline { margin-bottom: 0; }
   .iw-hero-bullets { margin-bottom: 28px; }
@@ -687,7 +686,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <!-- ===== NAV ===== -->
 <nav class="iw-nav">
   <div class="iw-nav-logo">
-    <img src="images/aGEWGs6654001.png" alt="AlphaFuel" width="341" height="143" loading="eager" fetchpriority="high">
+    <img src="images/aGEWGs6654001.webp" alt="AlphaFuel" width="125" height="53" loading="eager" fetchpriority="high">
   </div>
   <ul class="iw-nav-links">
     <li><a href="#reviews">Reviews</a></li>
@@ -704,7 +703,9 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <!-- ===== HERO ===== -->
 <section class="iw-hero">
   <div class="iw-hero-bg" aria-hidden="true">
-    <img src="images/alpha-fuel-bottle.png" alt="" width="800" height="1200" fetchpriority="high" loading="eager" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:0">
+    <picture>
+      <img src="images/alpha-fuel-bottle.png" alt="" width="800" height="1200" fetchpriority="high" loading="eager" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:0">
+    </picture>
   </div>
   <div class="iw-hero-overlay"></div>
   <div class="iw-hero-inner">
@@ -712,7 +713,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
       <h1 class="iw-hero-headline">Your Body Still Knows<br>How to Get Hard.</h1>
       <!-- Mobile bottle -->
       <div class="iw-hero-bottle-mobile">
-        <img src="images/alpha-fuel-bottle.png" alt="AlphaFuel Supplement" width="800" height="1200" loading="eager" fetchpriority="high">
+        <img src="images/alpha-fuel-bottle.png" alt="AlphaFuel Supplement" width="150" height="225" loading="eager" fetchpriority="high">
       </div>
       <div class="iw-hero-bullets">
         <div class="iw-bullet">
@@ -737,7 +738,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
     </div>
     <!-- Desktop bottle -->
     <div class="iw-hero-bottle">
-      <img src="images/alpha-fuel-bottle.png" alt="AlphaFuel Supplement" width="800" height="1200" loading="eager" fetchpriority="high">
+      <img src="images/alpha-fuel-bottle.png" alt="AlphaFuel Supplement" width="380" height="570" loading="eager" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -766,7 +767,10 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <section class="iw-hook">
   <div class="iw-hook-inner">
     <div class="iw-hook-img">
-      <img src="images/sWyIKg2290487.webp" alt="AlphaFuel - Restore your performance" width="532" height="701" loading="lazy" decoding="async">
+      <picture>
+        <source media="(max-width: 560px)" srcset="images/sWyIKg2290487-mob.webp" type="image/webp">
+        <img src="images/sWyIKg2290487.webp" alt="AlphaFuel - Restore your performance" width="532" height="701" loading="lazy" decoding="async">
+      </picture>
     </div>
     <div class="iw-hook-copy">
       <h2 class="iw-hook-headline">Women want a man who can go the distance.</h2>
@@ -909,7 +913,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
       </a>
     </div>
     <div class="iw-product-desc-img">
-      <img src="images/alpha-fuel-bottle.png" alt="AlphaFuel Supplement Bottle" width="800" height="1200" loading="eager" fetchpriority="high">
+      <img src="images/alpha-fuel-bottle.png" alt="AlphaFuel Supplement Bottle" width="360" height="540" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -1468,7 +1472,17 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 </section>
 
 <script>
-function toggleFaq(btn){var a=btn.nextElementSibling,o=btn.classList.contains('open');document.querySelectorAll('.iw-faq-question').forEach(function(q){q.classList.remove('open');q.nextElementSibling.style.maxHeight=null});if(!o){btn.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}}
+(function(){
+  // Batch DOM reads before writes to prevent forced reflow
+  function toggleFaq(btn){
+    var items=document.querySelectorAll('.iw-faq-question');
+    var o=btn.classList.contains('open');
+    var h=o?0:btn.nextElementSibling.scrollHeight; // read before any write
+    items.forEach(function(q){q.classList.remove('open');q.nextElementSibling.style.maxHeight=null;});
+    if(!o){btn.classList.add('open');btn.nextElementSibling.style.maxHeight=h+'px';}
+  }
+  window.toggleFaq=toggleFaq;
+})();
 </script>
 
 </body>
