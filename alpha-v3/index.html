@@ -86,11 +86,10 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 .iw-nav-logo img {
   height: 60px;
   width: auto;
-  max-width: 100%; /* Boa prática para garantir que a imagem não vaze o container */
+  max-width: 100%;
   display: block;
 }
 
-/* Regra para telas de dispositivos móveis (smartphones) */
 @media (max-width: 768px) {
   .iw-nav-logo img {
     height: 66px;
@@ -441,32 +440,25 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 .iw-pricing-headline u { color: #ff0; }
 .iw-pricing-grid { display: grid; grid-template-columns: 1fr 1.08fr 1fr; gap: 14px; max-width: 1060px; margin: 0 auto; align-items: start; }
 
-/* Card base */
 .iw-pkg-card { background: #fff; border-radius: 14px; overflow: visible; display: flex; flex-direction: column; align-items: center; position: relative; padding-bottom: 20px; }
 
-/* Header */
 .iw-pkg-header { width: 100%; border-radius: 14px 14px 0 0; padding: 14px 10px 10px; text-align: center; }
 .iw-pkg-header-dark { background: #2b2b2b; }
 .iw-pkg-header-gold  { background: #c8962a; }
 .iw-pkg-header-name { font-family: Poppins, sans-serif; font-size: clamp(18px, 2.2vw, 24px); font-weight: 900; color: #fff; letter-spacing: .5px; margin: 0 0 2px; }
 .iw-pkg-header-days { font-family: Poppins, sans-serif; font-size: 13px; color: rgba(255,255,255,.85); font-weight: 500; margin: 0; }
 
-/* Most popular badge */
 .iw-pkg-badge { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); background: #e3242b; color: #fff; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .8px; padding: 5px 14px; border-radius: 30px; white-space: nowrap; z-index: 10; box-shadow: 0 2px 8px rgba(0,0,0,.35); }
 
-/* Sub-title below header */
 .iw-pkg-subtitle { font-family: Poppins, sans-serif; font-size: clamp(12px, 1.3vw, 15px); font-weight: 700; color: #222; text-align: center; padding: 12px 12px 0; line-height: 1.3; }
 
-/* Bottle image */
 .iw-pkg-img { width: 80%; max-width: 300px; height: auto; display: block; margin: 8px auto 4px; }
 
-/* Price row */
 .iw-pkg-price { display: flex; align-items: baseline; justify-content: center; gap: 3px; margin: 8px 0 0; }
 .iw-pkg-price sup { font-family: Poppins, sans-serif; font-size: 22px; font-weight: 700; color: #111; line-height: 1; }
 .iw-pkg-price-num { font-family: Poppins, sans-serif; font-size: clamp(44px, 6vw, 58px); font-weight: 900; color: #111; line-height: 1; }
 .iw-pkg-price-label { font-family: Poppins, sans-serif; font-size: 13px; color: #555; line-height: 1.2; text-align: left; }
 
-/* Checklist */
 .iw-pkg-list { list-style: none; padding: 0 14px; margin: 10px 0 8px; width: 100%; box-sizing: border-box; }
 .iw-pkg-list li { font-family: Poppins, sans-serif; font-size: clamp(11px, 1.2vw, 13px); font-weight: 600; color: #fff; padding: 5px 10px; margin-bottom: 5px; border-radius: 4px; display: flex; align-items: center; gap: 7px; }
 .iw-pkg-list li::before { content: "✔"; font-size: 12px; flex-shrink: 0; }
@@ -474,24 +466,18 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 .iw-pkg-list .li-blue { background: #1a56db; }
 .iw-pkg-list .li-gold { background: #b8860b; }
 
-/* Save tag */
 .iw-pkg-save { font-family: Poppins, sans-serif; font-size: 13px; font-weight: 800; color: #e3242b; text-align: center; margin: 2px 0 8px; }
 
-/* CTA button */
 .iw-pkg-btn { display: block; width: calc(100% - 28px); margin: 6px 14px 10px; background: linear-gradient(180deg, #3ecf3e 0%, #1da81d 100%); color: #fff; font-family: Poppins, sans-serif; font-size: clamp(14px, 1.8vw, 18px); font-weight: 900; text-align: center; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; padding: 14px 10px; border-radius: 40px; box-shadow: 0 4px 14px rgba(30,168,30,.45); transition: filter .2s; }
 .iw-pkg-btn:hover { filter: brightness(1.08); }
 
-/* Cards image */
 .iw-pkg-cards { display: block; width: 140px; margin: 0 auto 6px; }
 
-/* Total price */
 .iw-pkg-total { font-family: Poppins, sans-serif; font-size: 13px; color: #444; text-align: center; }
 .iw-pkg-total s { color: #aaa; }
 
-/* Featured card boost */
 .iw-pkg-card-featured { box-shadow: 0 0 0 3px #c8962a, 0 8px 30px rgba(200,150,42,.35); margin-top: -10px; }
 
-/* Mobile */
 @media (max-width: 680px) {
   .iw-pricing-grid { grid-template-columns: 1fr; max-width: 360px; }
   .iw-pkg-card-featured { margin-top: 18px; }
@@ -719,7 +705,6 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
   <div class="iw-hero-inner">
     <div class="iw-hero-copy">
       <h1 class="iw-hero-headline">Your Body Still Knows<br>How to Get Hard.</h1>
-      <!-- Mobile bottle -->
       <div class="iw-hero-bottle-mobile">
         <img src="images/alpha-fuel-bottle.webp" alt="AlphaFuel Supplement" width="150" height="225" loading="eager" fetchpriority="high">
       </div>
@@ -739,12 +724,11 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
       </div>
       <div class="iw-hero-cta-wrap">
         <div style="display:inline-flex;flex-direction:column;align-items:center;gap:10px">
-          <a href="#price-section1" class="iw-hero-btn shimmer-btn" >Wake It Up — Claim My Discount <span style="font-size:1.2em;font-weight:900">➜</span></a>
+          <a href="#price-section1" class="iw-hero-btn shimmer-btn" >Wake It Up — Claim My Discount <span style="font-size:1.2em;font-weight:900">&#x27A4;</span></a>
           <span class="iw-hero-btn-note">60-Day Money-Back Guarantee · Free Shipping Today</span>
         </div>
       </div>
     </div>
-    <!-- Desktop bottle -->
     <div class="iw-hero-bottle">
       <img src="images/alpha-fuel-bottle.webp" alt="AlphaFuel Supplement" width="380" height="570" loading="eager" fetchpriority="high">
     </div>
@@ -797,32 +781,32 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
     <p class="iw-qualify-sub">If even one of these sounds familiar, your eNOS enzyme system may already be declining — and AlphaFuel was designed exactly for this.</p>
     <div class="iw-qualify-grid">
       <div class="iw-qualify-card">
-        <div class="iw-qualify-card-icon">😔</div>
+        <div class="iw-qualify-card-icon">&#x1F614;</div>
         <p class="iw-qualify-card-text">You've started avoiding intimacy — not because you don't want it, but because you're afraid of what might happen.</p>
       </div>
       <div class="iw-qualify-card">
-        <div class="iw-qualify-card-icon">💊</div>
+        <div class="iw-qualify-card-icon">&#x1F48A;</div>
         <p class="iw-qualify-card-text">You've tried the blue pill — but the timing, the side effects, or the dependency made everything feel worse.</p>
       </div>
       <div class="iw-qualify-card">
-        <div class="iw-qualify-card-icon">❓</div>
+        <div class="iw-qualify-card-icon">&#x2753;</div>
         <p class="iw-qualify-card-text">Your erections aren't what they used to be — and no doctor has ever told you the real reason why.</p>
       </div>
     </div>
     <div class="iw-qualify-grid-bottom">
       <div class="iw-qualify-card">
-        <div class="iw-qualify-card-icon">💔</div>
+        <div class="iw-qualify-card-icon">&#x1F494;</div>
         <p class="iw-qualify-card-text">The distance between you and your partner keeps growing — and you both pretend not to notice.</p>
       </div>
       <div class="iw-qualify-card">
-        <div class="iw-qualify-card-icon">🚫</div>
+        <div class="iw-qualify-card-icon">&#x1F6AB;</div>
         <p class="iw-qualify-card-text">You've tried other supplements. They did nothing. And you're almost out of hope.</p>
       </div>
     </div>
     <div class="iw-qualify-cta">
       <p class="iw-qualify-cta-label">If you said yes to even one — AlphaFuel was built for you.</p>
       <a href="#price-section1" class="iw-qualify-btn shimmer-btn" >
-        Yes — I Want To Restore My Performance →
+        Yes — I Want To Restore My Performance &rarr;
         <span class="iw-qualify-btn-note">60-Day Money-Back Guarantee · No Questions Asked</span>
       </a>
     </div>
@@ -843,15 +827,13 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <!-- ===== SOCIAL PROOF BANNER ===== -->
 <div class="iw-banner">
   <p class="iw-banner-text">Join over 47,000 men who restored their natural performance with AlphaFuel.</p>
-  <a href="#price-section1" class="iw-banner-btn shimmer-btn" >🛒 Claim Your Risk-Free Trial Now!</a>
+  <a href="#price-section1" class="iw-banner-btn shimmer-btn" >&#x1F6D2; Claim Your Risk-Free Trial Now!</a>
 </div>
 
 <!-- ===== BENEFITS ===== -->
 <section class="iw-benefits" id="benefits">
   <div class="iw-benefits-inner">
     <h2 class="iw-benefits-headline">AlphaFuel — Real Benefits That Go <span>Beyond the Bedroom</span></h2>
-
-    <!-- Desktop Grid -->
     <div class="iw-benefits-grid">
       <div class="iw-benefit-item">
         <div class="iw-benefit-icon-wrap"><img src="images/vDwPfF6845420.webp" alt="Firm Erections" width="70" height="61" loading="lazy" decoding="async"></div>
@@ -877,8 +859,6 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
         <p class="iw-benefit-text">Your body shares blood vessels across your heart, brain, and erectile tissue. When AlphaFuel restores your eNOS system, you gain fuller erections and sharper focus, energy, and overall vitality.</p>
       </div>
     </div>
-
-    <!-- Mobile Layout -->
     <div class="iw-benefits-mobile">
       <div class="iw-benefits-mobile-img"><img src="images/rICCBi6845420.webp" alt="AlphaFuel Results" width="380" height="500" loading="lazy" decoding="async"></div>
       <div class="iw-benefits-mobile-list">
@@ -933,59 +913,31 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
     <div class="iw-mechanism-divider"></div>
     <p class="iw-mechanism-copy">Every erection depends on one thing: <span class="hl">nitric oxide.</span> When you're aroused, your body needs to flood the corpora cavernosa — the two chambers inside the penis — with blood. The only way that happens is when your blood vessels relax and expand wide enough to let that blood rush in.</p>
     <p class="iw-mechanism-copy">That process is controlled by a tiny enzyme called <span class="hl">eNOS — endothelial nitric oxide synthase.</span> Think of it as the switch that turns your erection on:</p>
-
     <ul class="iw-arrow-list">
-      <li>
-        <span class="arrow">→</span>
-        <span><strong>eNOS working properly:</strong> nitric oxide flows freely, blood vessels <span class="hl">expand up to 4x their normal size</span>, and you get firm, full, lasting erections.</span>
-      </li>
-      <li>
-        <span class="arrow">→</span>
-        <span><strong>eNOS declining:</strong> nitric oxide drops, blood flow fails, and <span class="hl">erections become weak, unreliable, or stop happening altogether.</span></span>
-      </li>
+      <li><span class="arrow">&rarr;</span><span><strong>eNOS working properly:</strong> nitric oxide flows freely, blood vessels <span class="hl">expand up to 4x their normal size</span>, and you get firm, full, lasting erections.</span></li>
+      <li><span class="arrow">&rarr;</span><span><strong>eNOS declining:</strong> nitric oxide drops, blood flow fails, and <span class="hl">erections become weak, unreliable, or stop happening altogether.</span></span></li>
     </ul>
-
     <p class="iw-mechanism-copy">After 40, eNOS levels decline naturally — and <span class="hl">modern toxins from food, water, and plastics accelerate the damage</span> faster than most men realize. Most doctors never test for it. Most supplements never address it. <strong>AlphaFuel was specifically formulated to target, restore, and reactivate eNOS function</strong> — bringing back the natural nitric oxide production your body needs to perform.</p>
-
     <div class="iw-stages">
       <div class="iw-stage-card">
-        <div class="iw-stage-img-wrap">
-          <img src="images/yXjdED7658651.webp" alt="Stage 1" width="400" height="180" loading="lazy" decoding="async">
-          <span class="iw-stage-badge">Stage 1</span>
-        </div>
-        <div class="iw-stage-body">
-          <div class="iw-stage-title">eNOS Reactivated at the Source</div>
-          <p class="iw-stage-text">AlphaFuel's clinically studied ingredients reactivate your eNOS enzyme — restoring your body's ability to produce nitric oxide naturally, consistently, and without synthetic chemicals.</p>
-        </div>
+        <div class="iw-stage-img-wrap"><img src="images/yXjdED7658651.webp" alt="Stage 1" width="400" height="180" loading="lazy" decoding="async"><span class="iw-stage-badge">Stage 1</span></div>
+        <div class="iw-stage-body"><div class="iw-stage-title">eNOS Reactivated at the Source</div><p class="iw-stage-text">AlphaFuel's clinically studied ingredients reactivate your eNOS enzyme — restoring your body's ability to produce nitric oxide naturally, consistently, and without synthetic chemicals.</p></div>
       </div>
       <div class="iw-stage-card">
-        <div class="iw-stage-img-wrap">
-          <img src="images/AaqBij7658651.webp" alt="Stage 2" width="400" height="180" loading="lazy" decoding="async">
-          <span class="iw-stage-badge">Stage 2</span>
-        </div>
-        <div class="iw-stage-body">
-          <div class="iw-stage-title">Blood Rushes Into Erectile Tissue</div>
-          <p class="iw-stage-text">With nitric oxide restored, blood vessels expand up to four times their normal size — flooding the corpora cavernosa, the two chambers responsible for building and sustaining firm erections.</p>
-        </div>
+        <div class="iw-stage-img-wrap"><img src="images/AaqBij7658651.webp" alt="Stage 2" width="400" height="180" loading="lazy" decoding="async"><span class="iw-stage-badge">Stage 2</span></div>
+        <div class="iw-stage-body"><div class="iw-stage-title">Blood Rushes Into Erectile Tissue</div><p class="iw-stage-text">With nitric oxide restored, blood vessels expand up to four times their normal size — flooding the corpora cavernosa, the two chambers responsible for building and sustaining firm erections.</p></div>
       </div>
       <div class="iw-stage-card">
-        <div class="iw-stage-img-wrap">
-          <img src="images/fHzqpi7658651.webp" alt="Stage 3" width="400" height="180" loading="lazy" decoding="async">
-          <span class="iw-stage-badge">Stage 3</span>
-        </div>
-        <div class="iw-stage-body">
-          <div class="iw-stage-title">Maximum Firmness, Fullness &amp; Endurance</div>
-          <p class="iw-stage-text">With consistent use, penile tissue fills completely — producing rock-hard, longer-lasting erections that feel stronger and more responsive over time.</p>
-        </div>
+        <div class="iw-stage-img-wrap"><img src="images/fHzqpi7658651.webp" alt="Stage 3" width="400" height="180" loading="lazy" decoding="async"><span class="iw-stage-badge">Stage 3</span></div>
+        <div class="iw-stage-body"><div class="iw-stage-title">Maximum Firmness, Fullness &amp; Endurance</div><p class="iw-stage-text">With consistent use, penile tissue fills completely — producing rock-hard, longer-lasting erections that feel stronger and more responsive over time.</p></div>
       </div>
     </div>
-
     <div class="iw-stamina">
       <h3 class="iw-stamina-headline">AlphaFuel Supercharges Your Staying Power!</h3>
       <p class="iw-stamina-body">Getting hard is one thing. <strong>Staying hard — through the whole performance — is what actually matters.</strong> AlphaFuel's sustained nitric oxide effect doesn't just get you started. It keeps blood flowing to the erectile tissue for longer, supporting harder, fuller erections from start to finish. Faster recovery. More control. Round-two readiness — for when once just isn't enough.</p>
       <p class="iw-stamina-tagline">Last Longer. Stay Harder. Be The Man She Can't Stop Talking About.</p>
       <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
-        <a href="#price-section1" class="iw-stamina-btn shimmer-btn" >Start My Restoration Today <span style="font-size:1.2em;font-weight:900">➜</span></a>
+        <a href="#price-section1" class="iw-stamina-btn shimmer-btn" >Start My Restoration Today <span style="font-size:1.2em;font-weight:900">&#x27A4;</span></a>
         <p style="font-size:13px;color:rgba(255,255,255,.4);letter-spacing:.03em;text-align:center">60-Day Guarantee + Free Shipping Today</p>
       </div>
     </div>
@@ -1006,18 +958,9 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
       <p class="iw-stats-sub">In an independent user survey, <strong>89% of men</strong> who took AlphaFuel consistently for 60+ days reported significant improvements in erection quality, stamina, and overall sexual confidence — without a single prescription drug.</p>
     </div>
     <div class="iw-stats-right">
-      <div class="iw-mini-stat">
-        <div class="iw-mini-stat-number">47K+</div>
-        <div class="iw-mini-stat-label">Men who restored their performance with AlphaFuel</div>
-      </div>
-      <div class="iw-mini-stat">
-        <div class="iw-mini-stat-number">90</div>
-        <div class="iw-mini-stat-label">Days of risk-free guarantee — no questions asked</div>
-      </div>
-      <div class="iw-mini-stat">
-        <div class="iw-mini-stat-number">5</div>
-        <div class="iw-mini-stat-label">Clinically studied ingredients targeting eNOS</div>
-      </div>
+      <div class="iw-mini-stat"><div class="iw-mini-stat-number">47K+</div><div class="iw-mini-stat-label">Men who restored their performance with AlphaFuel</div></div>
+      <div class="iw-mini-stat"><div class="iw-mini-stat-number">90</div><div class="iw-mini-stat-label">Days of risk-free guarantee — no questions asked</div></div>
+      <div class="iw-mini-stat"><div class="iw-mini-stat-number">5</div><div class="iw-mini-stat-label">Clinically studied ingredients targeting eNOS</div></div>
     </div>
   </div>
 </div>
@@ -1028,52 +971,34 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
     <p class="iw-ingr-eyebrow">The AlphaFuel Formula</p>
     <h2 class="iw-ingr-headline">5 Ingredients. <span>One Precise System.</span></h2>
     <p class="iw-ingr-sub">Every ingredient was chosen to work on the eNOS enzyme system — in sequence, not at random.</p>
-
     <div class="iw-ingr-list">
       <div class="iw-ingr-item featured">
-        <div class="iw-ingr-item-body">
-          <div class="iw-ingr-item-name">Pine Bark Extract <span style="color:#aaa;font-weight:400;font-size:.85em">(French Maritime Pine)</span></div>
-          <div class="iw-ingr-item-desc">Restores eNOS enzyme activity directly in blood vessel walls. Must be sourced from the French Maritime Pine — generic versions don't deliver the same results.</div>
-        </div>
-        <span class="iw-ingr-item-badge">⭐ Anchor</span>
+        <div class="iw-ingr-item-body"><div class="iw-ingr-item-name">Pine Bark Extract <span style="color:#aaa;font-weight:400;font-size:.85em">(French Maritime Pine)</span></div><div class="iw-ingr-item-desc">Restores eNOS enzyme activity directly in blood vessel walls. Must be sourced from the French Maritime Pine — generic versions don't deliver the same results.</div></div>
+        <span class="iw-ingr-item-badge">&#x2B50; Anchor</span>
       </div>
       <div class="iw-ingr-item">
-        <div class="iw-ingr-item-body">
-          <div class="iw-ingr-item-name">L‑Citrulline</div>
-          <div class="iw-ingr-item-desc">Converts to L-Arginine in the body, creating a sustained nitric oxide release that keeps blood flow elevated for hours — harder erections, better stamina, faster recovery.</div>
-        </div>
+        <div class="iw-ingr-item-body"><div class="iw-ingr-item-name">L&#x2011;Citrulline</div><div class="iw-ingr-item-desc">Converts to L-Arginine in the body, creating a sustained nitric oxide release that keeps blood flow elevated for hours — harder erections, better stamina, faster recovery.</div></div>
         <span class="iw-ingr-item-badge">Sustained NO</span>
       </div>
       <div class="iw-ingr-item">
-        <div class="iw-ingr-item-body">
-          <div class="iw-ingr-item-name">L‑Arginine</div>
-          <div class="iw-ingr-item-desc">The direct raw material eNOS uses to produce nitric oxide. Strengthens endothelial cells lining blood vessels and amplifies L-Citrulline's effect when taken together.</div>
-        </div>
+        <div class="iw-ingr-item-body"><div class="iw-ingr-item-name">L&#x2011;Arginine</div><div class="iw-ingr-item-desc">The direct raw material eNOS uses to produce nitric oxide. Strengthens endothelial cells lining blood vessels and amplifies L-Citrulline's effect when taken together.</div></div>
         <span class="iw-ingr-item-badge">eNOS Fuel</span>
       </div>
       <div class="iw-ingr-item">
-        <div class="iw-ingr-item-body">
-          <div class="iw-ingr-item-name">Panax Ginseng <span style="color:#aaa;font-weight:400;font-size:.85em">(Korean Red Ginseng)</span></div>
-          <div class="iw-ingr-item-desc">Contains ginsenosides that boost nitric oxide and naturally inhibit PDE5 — the same pathway targeted by prescription ED drugs — without side effects. Clinically shown to improve erection hardness.</div>
-        </div>
+        <div class="iw-ingr-item-body"><div class="iw-ingr-item-name">Panax Ginseng <span style="color:#aaa;font-weight:400;font-size:.85em">(Korean Red Ginseng)</span></div><div class="iw-ingr-item-desc">Contains ginsenosides that boost nitric oxide and naturally inhibit PDE5 — the same pathway targeted by prescription ED drugs — without side effects. Clinically shown to improve erection hardness.</div></div>
         <span class="iw-ingr-item-badge">Natural PDE5</span>
       </div>
       <div class="iw-ingr-item featured">
-        <div class="iw-ingr-item-body">
-          <div class="iw-ingr-item-name">Icariin <span style="color:#aaa;font-weight:400;font-size:.85em">(Standardized Extract)</span></div>
-          <div class="iw-ingr-item-desc">A rare standardized compound — not generic Horny Goat Weed — that amplifies erection response and increases penile tissue sensitivity. Multiplies in effect when combined with L-Arginine.</div>
-        </div>
-        <span class="iw-ingr-item-badge">⭐ Unique</span>
+        <div class="iw-ingr-item-body"><div class="iw-ingr-item-name">Icariin <span style="color:#aaa;font-weight:400;font-size:.85em">(Standardized Extract)</span></div><div class="iw-ingr-item-desc">A rare standardized compound — not generic Horny Goat Weed — that amplifies erection response and increases penile tissue sensitivity. Multiplies in effect when combined with L-Arginine.</div></div>
+        <span class="iw-ingr-item-badge">&#x2B50; Unique</span>
       </div>
     </div>
-
     <div class="iw-ingr-callout">
       <p>These 5 ingredients work in sequence — not just side by side. <strong>Pine Bark and Ginseng restore eNOS. L-Arginine fuels it. L-Citrulline sustains it. Icariin amplifies the response.</strong> <em>This is what restoration actually looks like.</em></p>
     </div>
-
     <div class="iw-ingr-cta">
       <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
-        <a href="#price-section1" class="iw-ingr-btn shimmer-btn"  style="text-align:center">Give Me the Complete Formula <span style="font-size:1.2em;font-weight:900">➜</span></a>
+        <a href="#price-section1" class="iw-ingr-btn shimmer-btn" style="text-align:center">Give Me the Complete Formula <span style="font-size:1.2em;font-weight:900">&#x27A4;</span></a>
         <p style="font-size:13px;color:#999;letter-spacing:.03em;text-align:center">60-Day Guarantee · Free Shipping Today</p>
       </div>
     </div>
@@ -1086,75 +1011,24 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
     <p class="iw-reviews-eyebrow">Verified Customer Reviews</p>
     <h2 class="iw-reviews-headline">Real Men. Real Results.</h2>
     <p class="iw-reviews-sub">*Images blurred for privacy</p>
-
     <div class="iw-reviews-grid">
       <div class="iw-review-card">
-        <div class="iw-review-stars">
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-        </div>
-        <div class="iw-review-verified">
-          <svg width="13" height="13"><use href="#check"/></svg>
-          Verified Purchase · 6 Bottles
-        </div>
+        <div class="iw-review-stars"><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg></div>
+        <div class="iw-review-verified"><svg width="13" height="13"><use href="#check"/></svg>Verified Purchase · 6 Bottles</div>
         <p class="iw-review-quote">my wife literally asked me last week what changed lol. i didn't tell her i been taking this. honestly wasnt sure it would do anything but week 3 something clicked. i feel like myself again. not gonna go into too much detail but yeah. things are working. really working. wish i found this 2 years ago instead of wasting money on other stuff that did absolutely nothing</p>
-        <div class="iw-review-author">
-          <img class="iw-review-author-img" src="images/bIQCox9100022.webp" alt="Customer" width="84" height="84" loading="lazy" decoding="async">
-          <div>
-            <div class="iw-review-author-name">Gary H., 56</div>
-            <div class="iw-review-author-meta">Nevada, USA</div>
-            <span class="iw-review-package">6 Bottle Package</span>
-          </div>
-        </div>
+        <div class="iw-review-author"><img class="iw-review-author-img" src="images/bIQCox9100022.webp" alt="Customer" width="84" height="84" loading="lazy" decoding="async"><div><div class="iw-review-author-name">Gary H., 56</div><div class="iw-review-author-meta">Nevada, USA</div><span class="iw-review-package">6 Bottle Package</span></div></div>
       </div>
-
       <div class="iw-review-card">
-        <div class="iw-review-stars">
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-        </div>
-        <div class="iw-review-verified">
-          <svg width="13" height="13"><use href="#check"/></svg>
-          Verified Purchase · 3 Bottles
-        </div>
+        <div class="iw-review-stars"><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg></div>
+        <div class="iw-review-verified"><svg width="13" height="13"><use href="#check"/></svg>Verified Purchase · 3 Bottles</div>
         <p class="iw-review-quote">im 48 and i thought this was just... part of getting older you know? doctor just kept telling me its "normal for my age" and to "manage expectations." bro. manage expectations?? i got a wife. i ordered AlphaFuel kinda desperate tbh. month and a half later i genuinely dont recognize myself in a good way. energy is different. confidence is different. havent felt this way since my late 30s no joke</p>
-        <div class="iw-review-author">
-          <img class="iw-review-author-img" src="images/dEGfvX9100022.jpeg" alt="Customer" width="91" height="84" loading="lazy" decoding="async">
-          <div>
-            <div class="iw-review-author-name">Carlos M., 48</div>
-            <div class="iw-review-author-meta">Florida, USA</div>
-            <span class="iw-review-package">3 Bottle Package</span>
-          </div>
-        </div>
+        <div class="iw-review-author"><img class="iw-review-author-img" src="images/dEGfvX9100022.jpeg" alt="Customer" width="91" height="84" loading="lazy" decoding="async"><div><div class="iw-review-author-name">Carlos M., 48</div><div class="iw-review-author-meta">Florida, USA</div><span class="iw-review-package">3 Bottle Package</span></div></div>
       </div>
-
       <div class="iw-review-card">
-        <div class="iw-review-stars">
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-          <svg width="18" height="18"><use href="#star"/></svg>
-        </div>
-        <div class="iw-review-verified">
-          <svg width="13" height="13"><use href="#check"/></svg>
-          Verified Purchase · 6 Bottles
-        </div>
+        <div class="iw-review-stars"><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg><svg width="18" height="18"><use href="#star"/></svg></div>
+        <div class="iw-review-verified"><svg width="13" height="13"><use href="#check"/></svg>Verified Purchase · 6 Bottles</div>
         <p class="iw-review-quote">look i dont write reviews ever. but this one i had to. been married 22 years and the last 3 were rough. not gonna say more than that. a friend told me about the doctor behind this product so i did my research first — guy is legit, ivy league, real credentials. that gave me enough trust to try it. 2 months in and i swear on everything my marriage is different. she's different. i'm different. just order the 6 bottles and commit. you'll thank yourself later</p>
-        <div class="iw-review-author">
-          <img class="iw-review-author-img" src="images/tFJGdF9100022.jpeg" alt="Customer" width="84" height="84" loading="lazy" decoding="async">
-          <div>
-            <div class="iw-review-author-name">William T., 53</div>
-            <div class="iw-review-author-meta">Texas, USA</div>
-            <span class="iw-review-package">6 Bottle Package</span>
-          </div>
-        </div>
+        <div class="iw-review-author"><img class="iw-review-author-img" src="images/tFJGdF9100022.jpeg" alt="Customer" width="84" height="84" loading="lazy" decoding="async"><div><div class="iw-review-author-name">William T., 53</div><div class="iw-review-author-meta">Texas, USA</div><span class="iw-review-package">6 Bottle Package</span></div></div>
       </div>
     </div>
   </div>
@@ -1164,76 +1038,42 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <section class="iw-pricing-section" id="price-section1">
   <h2 class="iw-pricing-headline">Claim Your <u>Discounted AlphaFuel</u> While Stocks Last</h2>
   <div class="iw-pricing-grid">
-
     <!-- 1 BOTTLE -->
     <div class="iw-pkg-card">
-      <div class="iw-pkg-header iw-pkg-header-dark">
-        <p class="iw-pkg-header-name">1 BOTTLE</p>
-        <p class="iw-pkg-header-days">30 Day Supply</p>
-      </div>
+      <div class="iw-pkg-header iw-pkg-header-dark"><p class="iw-pkg-header-name">1 BOTTLE</p><p class="iw-pkg-header-days">30 Day Supply</p></div>
       <p class="iw-pkg-subtitle">Try AlphaFuel Pro<br>Risk-Free</p>
       <img src="images/onebottle.png" alt="1 Bottle AlphaFuel" class="iw-pkg-img" width="300" height="400" loading="lazy" decoding="async">
-      <div class="iw-pkg-price">
-        <sup>$</sup><span class="iw-pkg-price-num">69</span>
-        <span class="iw-pkg-price-label">Per<br>Bottle</span>
-      </div>
-      <ul class="iw-pkg-list">
-        <li class="li-red">60 Day Money-Back</li>
-        <li class="li-blue">2 Free Bonuses ($224 value)</li>
-        <li class="li-gold">Small Shipping Fee</li>
-      </ul>
+      <div class="iw-pkg-price"><sup>$</sup><span class="iw-pkg-price-num">69</span><span class="iw-pkg-price-label">Per<br>Bottle</span></div>
+      <ul class="iw-pkg-list"><li class="li-red">60 Day Money-Back</li><li class="li-blue">2 Free Bonuses ($224 value)</li><li class="li-gold">Small Shipping Fee</li></ul>
       <a href="https://www.diginear.com/2GFDLQK9/223JWDJP/?uid=5002" class="iw-pkg-btn shimmer-btn" >Add To Cart</a>
       <img src="images/cards.png" alt="Payment methods" class="iw-pkg-cards" width="140" height="40" loading="lazy" decoding="async">
       <p class="iw-pkg-total">Total price: $69</p>
     </div>
-
     <!-- 6 BOTTLES (featured) -->
     <div class="iw-pkg-card iw-pkg-card-featured" style="position:relative;">
-      <span class="iw-pkg-badge">⭐ Most Popular</span>
-      <div class="iw-pkg-header iw-pkg-header-gold">
-        <p class="iw-pkg-header-name">6 BOTTLES</p>
-        <p class="iw-pkg-header-days">180 Day Supply</p>
-      </div>
+      <span class="iw-pkg-badge">&#x2B50; Most Popular</span>
+      <div class="iw-pkg-header iw-pkg-header-gold"><p class="iw-pkg-header-name">6 BOTTLES</p><p class="iw-pkg-header-days">180 Day Supply</p></div>
       <p class="iw-pkg-subtitle">Complete Hydraulic System Repair</p>
       <img src="images/sixbottles.png" alt="6 Bottles AlphaFuel" class="iw-pkg-img" width="300" height="400" loading="lazy" decoding="async">
-      <div class="iw-pkg-price">
-        <sup>$</sup><span class="iw-pkg-price-num">49</span>
-        <span class="iw-pkg-price-label">Per<br>Bottle</span>
-      </div>
-      <ul class="iw-pkg-list">
-        <li class="li-red">60 Day Money-Back</li>
-        <li class="li-blue">2 Free Bonuses ($224 value)</li>
-        <li class="li-gold">FREE U.S. shipping</li>
-      </ul>
+      <div class="iw-pkg-price"><sup>$</sup><span class="iw-pkg-price-num">49</span><span class="iw-pkg-price-label">Per<br>Bottle</span></div>
+      <ul class="iw-pkg-list"><li class="li-red">60 Day Money-Back</li><li class="li-blue">2 Free Bonuses ($224 value)</li><li class="li-gold">FREE U.S. shipping</li></ul>
       <p class="iw-pkg-save">You Save : $120</p>
       <a href="https://www.diginear.com/2GFDLQK9/223JWDJP/?uid=5002" class="iw-pkg-btn shimmer-btn" >Add To Cart</a>
       <img src="images/cards.png" alt="Payment methods" class="iw-pkg-cards" width="140" height="40" loading="lazy" decoding="async">
       <p class="iw-pkg-total"><s>$414</s> Total price: $294</p>
     </div>
-
     <!-- 3 BOTTLES -->
     <div class="iw-pkg-card">
-      <div class="iw-pkg-header iw-pkg-header-dark">
-        <p class="iw-pkg-header-name">3 BOTTLES</p>
-        <p class="iw-pkg-header-days">60 Day Supply</p>
-      </div>
+      <div class="iw-pkg-header iw-pkg-header-dark"><p class="iw-pkg-header-name">3 BOTTLES</p><p class="iw-pkg-header-days">60 Day Supply</p></div>
       <p class="iw-pkg-subtitle">Pressure Valve Optimization System</p>
       <img src="images/threebottles.png" alt="3 Bottles AlphaFuel" class="iw-pkg-img" width="300" height="400" loading="lazy" decoding="async">
-      <div class="iw-pkg-price">
-        <sup>$</sup><span class="iw-pkg-price-num">59</span>
-        <span class="iw-pkg-price-label">Per<br>Bottle</span>
-      </div>
-      <ul class="iw-pkg-list">
-        <li class="li-red">60 Day Money-Back</li>
-        <li class="li-blue">2 Free Bonuses ($224 value)</li>
-        <li class="li-gold">FREE U.S. shipping</li>
-      </ul>
+      <div class="iw-pkg-price"><sup>$</sup><span class="iw-pkg-price-num">59</span><span class="iw-pkg-price-label">Per<br>Bottle</span></div>
+      <ul class="iw-pkg-list"><li class="li-red">60 Day Money-Back</li><li class="li-blue">2 Free Bonuses ($224 value)</li><li class="li-gold">FREE U.S. shipping</li></ul>
       <p class="iw-pkg-save">You Save : $30</p>
       <a href="https://www.diginear.com/2GFDLQK9/223JWDJP/?uid=5002" class="iw-pkg-btn shimmer-btn" >Add To Cart</a>
       <img src="images/cards.png" alt="Payment methods" class="iw-pkg-cards" width="140" height="40" loading="lazy" decoding="async">
       <p class="iw-pkg-total"><s>$207</s> Total price: $177</p>
     </div>
-
   </div>
 </section>
 
@@ -1241,30 +1081,18 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <section class="iw-bonuses">
   <div class="iw-bonuses-inner">
     <h2 class="iw-bonuses-headline">Order <span class="bottles">6 Bottles</span> or <span class="bottles">3 Bottles</span> of<br>AlphaFuel and Get <span class="free">2 FREE BONUSES!</span></h2>
-
     <div class="iw-bonus-card">
-      <div class="iw-bonus-header">
-        <div class="iw-bonus-header-label"><span>DIGITAL BONUS #1:</span> The AlphaFuel Erection Protocol</div>
-      </div>
+      <div class="iw-bonus-header"><div class="iw-bonus-header-label"><span>DIGITAL BONUS #1:</span> The AlphaFuel Erection Protocol</div></div>
       <div class="iw-bonus-body">
         <div class="iw-bonus-img"><img src="images/GdbxRv4070573.png" alt="The AlphaFuel Erection Protocol" width="180" height="240" loading="lazy" decoding="async"></div>
-        <div class="iw-bonus-content">
-          <div class="iw-bonus-price">RRP: <s>$73.50</s> Today: <span class="free-badge">FREE</span></div>
-          <p class="iw-bonus-desc">This comprehensive manual reveals Dr. Feuerstein's powerful <strong>30-second morning protocol</strong> for triggering maximum nitric oxide production. Learn the optimal timing for taking AlphaFuel for <strong>peak blood flow and performance</strong>...foods that boost your eNOS enzymes naturally...lifestyle hacks that amplify AlphaFuel's effects...and the secret techniques used by the world's greatest lovers.</p>
-        </div>
+        <div class="iw-bonus-content"><div class="iw-bonus-price">RRP: <s>$73.50</s> Today: <span class="free-badge">FREE</span></div><p class="iw-bonus-desc">This comprehensive manual reveals Dr. Feuerstein's powerful <strong>30-second morning protocol</strong> for triggering maximum nitric oxide production. Learn the optimal timing for taking AlphaFuel for <strong>peak blood flow and performance</strong>...foods that boost your eNOS enzymes naturally...lifestyle hacks that amplify AlphaFuel's effects...and the secret techniques used by the world's greatest lovers.</p></div>
       </div>
     </div>
-
     <div class="iw-bonus-card">
-      <div class="iw-bonus-header">
-        <div class="iw-bonus-header-label"><span>DIGITAL BONUS #2:</span> All-Night Stamina Secrets</div>
-      </div>
+      <div class="iw-bonus-header"><div class="iw-bonus-header-label"><span>DIGITAL BONUS #2:</span> All-Night Stamina Secrets</div></div>
       <div class="iw-bonus-body">
         <div class="iw-bonus-img"><img src="images/bMAfwI4070573.png" alt="All-Night Stamina Secrets" width="180" height="240" loading="lazy" decoding="async"></div>
-        <div class="iw-bonus-content">
-          <div class="iw-bonus-price">RRP: <s>$73.50</s> Today: <span class="free-badge">FREE</span></div>
-          <p class="iw-bonus-desc">Discover the hidden connection between <strong>nitric oxide and sexual endurance</strong>. This guide reveals advanced techniques to eliminate premature ejaculation, extend your performance, and give you complete control in the bedroom. Learn the psychological triggers that <strong>boost confidence</strong>...physical exercises that increase staying power...and the surprising foods that <strong>enhance stamina naturally</strong>.</p>
-        </div>
+        <div class="iw-bonus-content"><div class="iw-bonus-price">RRP: <s>$73.50</s> Today: <span class="free-badge">FREE</span></div><p class="iw-bonus-desc">Discover the hidden connection between <strong>nitric oxide and sexual endurance</strong>. This guide reveals advanced techniques to eliminate premature ejaculation, extend your performance, and give you complete control in the bedroom. Learn the psychological triggers that <strong>boost confidence</strong>...physical exercises that increase staying power...and the surprising foods that <strong>enhance stamina naturally</strong>.</p></div>
       </div>
     </div>
   </div>
@@ -1273,15 +1101,12 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <!-- ===== WARNING ===== -->
 <div class="iw-warning">
   <div class="iw-warning-inner">
-    <div class="iw-warning-header">
-      <span class="iw-warning-icon">⚠️</span>
-      <h2 class="iw-warning-title">Important Purchase Warning</h2>
-    </div>
+    <div class="iw-warning-header"><span class="iw-warning-icon">&#x26A0;&#xFE0F;</span><h2 class="iw-warning-title">Important Purchase Warning</h2></div>
     <p>Counterfeit versions of <strong>AlphaFuel</strong> have been found on third-party platforms like Amazon, eBay, and Walmart. These imitations do not contain the authentic formula developed by Dr. Joe Feuerstein — and may include unknown, potentially harmful substitutes.</p>
     <p><strong>The authentic AlphaFuel formula is only available through this official link.</strong> Purchasing anywhere else means you risk receiving a counterfeit product with no money-back guarantee and no quality assurance.</p>
     <p>When you order through the official page, you're guaranteed the real formula — with Dr. Feuerstein's precise ingredient sourcing, pharmaceutical-grade manufacturing, and your full <strong>60-Day no-questions-asked money-back guarantee.</strong></p>
     <div class="iw-warning-btn-wrap">
-      <a href="#price-section2"  class="iw-warning-btn shimmer-btn">Secure My Authentic Supply <span style="font-size:1.2em;font-weight:900">➜</span></a>
+      <a href="#price-section2" class="iw-warning-btn shimmer-btn">Secure My Authentic Supply <span style="font-size:1.2em;font-weight:900">&#x27A4;</span></a>
       <p style="margin:0;font-size:13px;color:#999">Only through this link. Avoid fakes — shop safe.</p>
     </div>
   </div>
@@ -1291,25 +1116,18 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <section class="iw-scarcity">
   <div class="iw-scarcity-inner">
     <div class="iw-scarcity-copy">
-      <div class="iw-scarcity-alert">
-        <div class="iw-scarcity-alert-dot"></div>
-        <span class="iw-scarcity-alert-text">⚠ Low Stock Warning</span>
-      </div>
+      <div class="iw-scarcity-alert"><div class="iw-scarcity-alert-dot"></div><span class="iw-scarcity-alert-text">&#x26A0; Low Stock Warning</span></div>
       <h2 class="iw-scarcity-headline">AlphaFuel Is <span>Flying Off the Shelves.</span></h2>
-      <div class="iw-scarcity-mobile-img">
-        <img src="images/XBzBak9446597.webp" alt="AlphaFuel - Limited Stock" width="420" height="420" loading="lazy" decoding="async">
-      </div>
+      <div class="iw-scarcity-mobile-img"><img src="images/XBzBak9446597.webp" alt="AlphaFuel - Limited Stock" width="420" height="420" loading="lazy" decoding="async"></div>
       <p class="iw-scarcity-body">Demand is surging as more men discover what AlphaFuel's eNOS Restoration System is actually doing for their performance, confidence, and relationships.</p>
       <p class="iw-scarcity-body">Here's the problem: <strong>AlphaFuel is made using a precise blend of hard-to-source ingredients</strong> — including Pine Bark Extract sourced exclusively from the French Maritime Pine Tree and a standardized Icariin extract that most manufacturers can't access at therapeutic potency. These aren't ingredients you can swap out or replace with cheaper alternatives.</p>
       <p class="iw-scarcity-body">Because of the sourcing complexity and <strong>Dr. Feuerstein's strict quality standards</strong>, only a limited number of batches can be produced at any time. When current stock runs out, it can take <strong>several months to restock</strong> — and there's no guarantee pricing will stay the same.</p>
       <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
-        <a href="#price-section2" class="iw-scarcity-btn shimmer-btn"  style="text-align:center;display:inline-block">I'm Not Waiting — Claim My Bottles Now <span style="font-size:1.2em;font-weight:900">➜</span></a>
+        <a href="#price-section2" class="iw-scarcity-btn shimmer-btn" style="text-align:center;display:inline-block">I'm Not Waiting — Claim My Bottles Now <span style="font-size:1.2em;font-weight:900">&#x27A4;</span></a>
         <p style="font-size:13px;color:rgba(255,255,255,.45);letter-spacing:.03em;text-align:center">60-Day Guarantee + Free Shipping Today</p>
       </div>
     </div>
-    <div class="iw-scarcity-img">
-      <img src="images/XBzBak9446597.webp" alt="AlphaFuel - Limited Stock" width="420" height="420" loading="lazy" decoding="async">
-    </div>
+    <div class="iw-scarcity-img"><img src="images/XBzBak9446597.webp" alt="AlphaFuel - Limited Stock" width="420" height="420" loading="lazy" decoding="async"></div>
   </div>
 </section>
 
@@ -1318,9 +1136,7 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
   <div class="iw-quality-inner">
     <h2 class="iw-quality-headline">100% Quality Assurance</h2>
     <p class="iw-quality-body"><strong>AlphaFuel is soy-free, dairy-free, vegetarian, non-GMO, and subjected to third-party inspections</strong> to ensure high quality and purity. Each container is manufactured in the USA at a facility certified by <strong>Good Manufacturing Practices (GMP)</strong>. The facility uses ultra-modern, precision-engineered machinery and infrared spectroscopy testing, operated under the strictest and most sterile conditions.</p>
-    <div class="iw-quality-badges">
-      <img src="images/QJLgyy9575170.png" alt="GMP Certified · Assembled in USA · FDA Registered · 3rd Party Tested" width="600" height="150" loading="lazy" decoding="async">
-    </div>
+    <div class="iw-quality-badges"><img src="images/QJLgyy9575170.png" alt="GMP Certified · Assembled in USA · FDA Registered · 3rd Party Tested" width="600" height="150" loading="lazy" decoding="async"></div>
   </div>
 </section>
 
@@ -1328,76 +1144,42 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <section class="iw-pricing-section" id="price-section2">
   <h2 class="iw-pricing-headline">Claim Your <u>Discounted AlphaFuel</u> While Stocks Last</h2>
   <div class="iw-pricing-grid">
-
     <!-- 1 BOTTLE -->
     <div class="iw-pkg-card">
-      <div class="iw-pkg-header iw-pkg-header-dark">
-        <p class="iw-pkg-header-name">1 BOTTLE</p>
-        <p class="iw-pkg-header-days">30 Day Supply</p>
-      </div>
+      <div class="iw-pkg-header iw-pkg-header-dark"><p class="iw-pkg-header-name">1 BOTTLE</p><p class="iw-pkg-header-days">30 Day Supply</p></div>
       <p class="iw-pkg-subtitle">Try AlphaFuel Pro<br>Risk-Free</p>
       <img src="images/onebottle.png" alt="1 Bottle AlphaFuel" class="iw-pkg-img" width="300" height="400" loading="lazy" decoding="async">
-      <div class="iw-pkg-price">
-        <sup>$</sup><span class="iw-pkg-price-num">69</span>
-        <span class="iw-pkg-price-label">Per<br>Bottle</span>
-      </div>
-      <ul class="iw-pkg-list">
-        <li class="li-red">60 Day Money-Back</li>
-        <li class="li-blue">2 Free Bonuses ($224 value)</li>
-        <li class="li-gold">Small Shipping Fee</li>
-      </ul>
+      <div class="iw-pkg-price"><sup>$</sup><span class="iw-pkg-price-num">69</span><span class="iw-pkg-price-label">Per<br>Bottle</span></div>
+      <ul class="iw-pkg-list"><li class="li-red">60 Day Money-Back</li><li class="li-blue">2 Free Bonuses ($224 value)</li><li class="li-gold">Small Shipping Fee</li></ul>
       <a href="https://www.diginear.com/2GFDLQK9/223JWDJP/?uid=5002" class="iw-pkg-btn shimmer-btn" >Add To Cart</a>
       <img src="images/cards.png" alt="Payment methods" class="iw-pkg-cards" width="140" height="40" loading="lazy" decoding="async">
       <p class="iw-pkg-total">Total price: $69</p>
     </div>
-
     <!-- 6 BOTTLES (featured) -->
     <div class="iw-pkg-card iw-pkg-card-featured" style="position:relative;">
-      <span class="iw-pkg-badge">⭐ Most Popular</span>
-      <div class="iw-pkg-header iw-pkg-header-gold">
-        <p class="iw-pkg-header-name">6 BOTTLES</p>
-        <p class="iw-pkg-header-days">180 Day Supply</p>
-      </div>
+      <span class="iw-pkg-badge">&#x2B50; Most Popular</span>
+      <div class="iw-pkg-header iw-pkg-header-gold"><p class="iw-pkg-header-name">6 BOTTLES</p><p class="iw-pkg-header-days">180 Day Supply</p></div>
       <p class="iw-pkg-subtitle">Complete Hydraulic System Repair</p>
       <img src="images/sixbottles.png" alt="6 Bottles AlphaFuel" class="iw-pkg-img" width="300" height="400" loading="lazy" decoding="async">
-      <div class="iw-pkg-price">
-        <sup>$</sup><span class="iw-pkg-price-num">49</span>
-        <span class="iw-pkg-price-label">Per<br>Bottle</span>
-      </div>
-      <ul class="iw-pkg-list">
-        <li class="li-red">60 Day Money-Back</li>
-        <li class="li-blue">2 Free Bonuses ($224 value)</li>
-        <li class="li-gold">FREE U.S. shipping</li>
-      </ul>
+      <div class="iw-pkg-price"><sup>$</sup><span class="iw-pkg-price-num">49</span><span class="iw-pkg-price-label">Per<br>Bottle</span></div>
+      <ul class="iw-pkg-list"><li class="li-red">60 Day Money-Back</li><li class="li-blue">2 Free Bonuses ($224 value)</li><li class="li-gold">FREE U.S. shipping</li></ul>
       <p class="iw-pkg-save">You Save : $120</p>
       <a href="https://www.diginear.com/2GFDLQK9/223JWDJP/?uid=5002" class="iw-pkg-btn shimmer-btn" >Add To Cart</a>
       <img src="images/cards.png" alt="Payment methods" class="iw-pkg-cards" width="140" height="40" loading="lazy" decoding="async">
       <p class="iw-pkg-total"><s>$414</s> Total price: $294</p>
     </div>
-
     <!-- 3 BOTTLES -->
     <div class="iw-pkg-card">
-      <div class="iw-pkg-header iw-pkg-header-dark">
-        <p class="iw-pkg-header-name">3 BOTTLES</p>
-        <p class="iw-pkg-header-days">60 Day Supply</p>
-      </div>
+      <div class="iw-pkg-header iw-pkg-header-dark"><p class="iw-pkg-header-name">3 BOTTLES</p><p class="iw-pkg-header-days">60 Day Supply</p></div>
       <p class="iw-pkg-subtitle">Pressure Valve Optimization System</p>
       <img src="images/threebottles.png" alt="3 Bottles AlphaFuel" class="iw-pkg-img" width="300" height="400" loading="lazy" decoding="async">
-      <div class="iw-pkg-price">
-        <sup>$</sup><span class="iw-pkg-price-num">59</span>
-        <span class="iw-pkg-price-label">Per<br>Bottle</span>
-      </div>
-      <ul class="iw-pkg-list">
-        <li class="li-red">60 Day Money-Back</li>
-        <li class="li-blue">2 Free Bonuses ($224 value)</li>
-        <li class="li-gold">FREE U.S. shipping</li>
-      </ul>
+      <div class="iw-pkg-price"><sup>$</sup><span class="iw-pkg-price-num">59</span><span class="iw-pkg-price-label">Per<br>Bottle</span></div>
+      <ul class="iw-pkg-list"><li class="li-red">60 Day Money-Back</li><li class="li-blue">2 Free Bonuses ($224 value)</li><li class="li-gold">FREE U.S. shipping</li></ul>
       <p class="iw-pkg-save">You Save : $30</p>
       <a href="https://www.diginear.com/2GFDLQK9/223JWDJP/?uid=5002" class="iw-pkg-btn shimmer-btn" >Add To Cart</a>
       <img src="images/cards.png" alt="Payment methods" class="iw-pkg-cards" width="140" height="40" loading="lazy" decoding="async">
       <p class="iw-pkg-total"><s>$207</s> Total price: $177</p>
     </div>
-
   </div>
 </section>
 
@@ -1405,87 +1187,22 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 <section class="iw-faq" id="faq">
   <div class="iw-faq-inner">
     <h2 class="iw-faq-headline">Frequently Asked Questions</h2>
-
-    <div class="iw-faq-item">
-      <button class="iw-faq-question" onclick="toggleFaq(this)">
-        I've tried other supplements before and they didn't work. Why would AlphaFuel be different?
-        <svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg>
-      </button>
-      <div class="iw-faq-answer">
-        <div class="iw-faq-answer-inner">Most supplements target symptoms — not the underlying cause. They boost energy, add herbs with mild effects, or rely on ingredients that never address why erections fail in the first place. <strong>AlphaFuel is built around a specific biological target: the eNOS enzyme.</strong> When eNOS function declines — which happens naturally after 40 — your body stops producing enough nitric oxide to generate firm erections. AlphaFuel's formula was developed by Dr. Joe Feuerstein specifically to reactivate eNOS function and restore natural nitric oxide production at the source. That's a fundamentally different approach from anything you've likely tried before.</div>
-      </div>
-    </div>
-
-    <div class="iw-faq-item">
-      <button class="iw-faq-question" onclick="toggleFaq(this)">
-        Is AlphaFuel available on Amazon, Walmart, or in stores?
-        <svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg>
-      </button>
-      <div class="iw-faq-answer">
-        <div class="iw-faq-answer-inner">No. <strong>AlphaFuel is exclusively available through the official website.</strong> It is not sold on Amazon, eBay, Walmart, or any other third-party platform. If you see it listed elsewhere, it is not the authentic formula — counterfeit versions have been reported on these platforms and may contain substituted or inferior ingredients. Purchasing through the official link is the only way to guarantee you receive the real product, the correct formulation, and your 60-Day money-back guarantee.</div>
-      </div>
-    </div>
-
-    <div class="iw-faq-item">
-      <button class="iw-faq-question" onclick="toggleFaq(this)">
-        How is AlphaFuel different from other ED supplements I've seen advertised?
-        <svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg>
-      </button>
-      <div class="iw-faq-answer">
-        <div class="iw-faq-answer-inner">Most ED supplements use generic blends of popular herbs with no clinical mechanism tying them together. AlphaFuel is different in three key ways: <strong>First</strong>, it targets the eNOS enzyme — the biological root cause of most erectile dysfunction, not just the symptoms. <strong>Second</strong>, it was formulated by Dr. Joe Feuerstein, a board-certified Ivy League physician with 20 years of clinical experience in men's sexual health. <strong>Third</strong>, every ingredient — including Pine Bark Extract sourced exclusively from the French Maritime Pine and standardized Icariin — was selected for its specific role in the eNOS Restoration System, not just its general reputation.</div>
-      </div>
-    </div>
-
-    <div class="iw-faq-item">
-      <button class="iw-faq-question" onclick="toggleFaq(this)">
-        Do I need a prescription to order AlphaFuel?
-        <svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg>
-      </button>
-      <div class="iw-faq-answer">
-        <div class="iw-faq-answer-inner">No prescription is required. <strong>AlphaFuel is a 100% natural dietary supplement</strong> — stimulant-free, non-GMO, and free of synthetic hormones or pharmaceutical compounds. You can order directly through the official website with no doctor's visit needed. That said, we always recommend consulting your physician before starting any new supplement, especially if you are currently taking medications for blood pressure, diabetes, or other conditions.</div>
-      </div>
-    </div>
-
-    <div class="iw-faq-item">
-      <button class="iw-faq-question" onclick="toggleFaq(this)">
-        Can I take AlphaFuel if I'm on blood pressure or diabetes medication?
-        <svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg>
-      </button>
-      <div class="iw-faq-answer">
-        <div class="iw-faq-answer-inner">AlphaFuel contains natural ingredients with no known interactions with common blood pressure or diabetes medications. However, because it supports nitric oxide production and cardiovascular function, <strong>we strongly recommend speaking with your doctor before starting AlphaFuel if you are on any prescription medications.</strong> Never stop taking any existing medications without first consulting your physician.</div>
-      </div>
-    </div>
-
-    <div class="iw-faq-item">
-      <button class="iw-faq-question" onclick="toggleFaq(this)">
-        Why should I order 6 bottles instead of just trying 1 first?
-        <svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg>
-      </button>
-      <div class="iw-faq-answer">
-        <div class="iw-faq-answer-inner">AlphaFuel works by restoring a biological system — not by forcing a temporary chemical reaction. That means <strong>results build and compound over time.</strong> Dr. Feuerstein recommends a minimum of 3 to 6 months for your eNOS enzymes to fully reactivate and your nitric oxide production to stabilize at optimal levels. The 6-bottle package gives you uninterrupted supply at the deepest discount, with free shipping and $147 worth of bonus guides included. Most men who try 1 bottle first end up ordering more — and sometimes face delays if stock runs low between orders.</div>
-      </div>
-    </div>
-
-    <div class="iw-faq-item">
-      <button class="iw-faq-question" onclick="toggleFaq(this)">
-        What if AlphaFuel doesn't work for me? Am I protected?
-        <svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg>
-      </button>
-      <div class="iw-faq-answer">
-        <div class="iw-faq-answer-inner">Completely. Every order of AlphaFuel — regardless of package size — is covered by a <strong>60-Day "No Questions Asked" Money-Back Guarantee.</strong> If you're unsatisfied for any reason, simply contact the customer support team within 60 Days of your purchase and you'll receive a full refund of every penny. You don't need to give a reason. You don't even need to return the bottles. Your investment is fully protected from the moment you order.</div>
-      </div>
-    </div>
-
+    <div class="iw-faq-item"><button class="iw-faq-question" onclick="toggleFaq(this)">I've tried other supplements before and they didn't work. Why would AlphaFuel be different?<svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg></button><div class="iw-faq-answer"><div class="iw-faq-answer-inner">Most supplements target symptoms — not the underlying cause. They boost energy, add herbs with mild effects, or rely on ingredients that never address why erections fail in the first place. <strong>AlphaFuel is built around a specific biological target: the eNOS enzyme.</strong> When eNOS function declines — which happens naturally after 40 — your body stops producing enough nitric oxide to generate firm erections. AlphaFuel's formula was developed by Dr. Joe Feuerstein specifically to reactivate eNOS function and restore natural nitric oxide production at the source. That's a fundamentally different approach from anything you've likely tried before.</div></div></div>
+    <div class="iw-faq-item"><button class="iw-faq-question" onclick="toggleFaq(this)">Is AlphaFuel available on Amazon, Walmart, or in stores?<svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg></button><div class="iw-faq-answer"><div class="iw-faq-answer-inner">No. <strong>AlphaFuel is exclusively available through the official website.</strong> It is not sold on Amazon, eBay, Walmart, or any other third-party platform. If you see it listed elsewhere, it is not the authentic formula — counterfeit versions have been reported on these platforms and may contain substituted or inferior ingredients. Purchasing through the official link is the only way to guarantee you receive the real product, the correct formulation, and your 60-Day money-back guarantee.</div></div></div>
+    <div class="iw-faq-item"><button class="iw-faq-question" onclick="toggleFaq(this)">How is AlphaFuel different from other ED supplements I've seen advertised?<svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg></button><div class="iw-faq-answer"><div class="iw-faq-answer-inner">Most ED supplements use generic blends of popular herbs with no clinical mechanism tying them together. AlphaFuel is different in three key ways: <strong>First</strong>, it targets the eNOS enzyme — the biological root cause of most erectile dysfunction, not just the symptoms. <strong>Second</strong>, it was formulated by Dr. Joe Feuerstein, a board-certified Ivy League physician with 20 years of clinical experience in men's sexual health. <strong>Third</strong>, every ingredient — including Pine Bark Extract sourced exclusively from the French Maritime Pine and standardized Icariin — was selected for its specific role in the eNOS Restoration System, not just its general reputation.</div></div></div>
+    <div class="iw-faq-item"><button class="iw-faq-question" onclick="toggleFaq(this)">Do I need a prescription to order AlphaFuel?<svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg></button><div class="iw-faq-answer"><div class="iw-faq-answer-inner">No prescription is required. <strong>AlphaFuel is a 100% natural dietary supplement</strong> — stimulant-free, non-GMO, and free of synthetic hormones or pharmaceutical compounds. You can order directly through the official website with no doctor's visit needed. That said, we always recommend consulting your physician before starting any new supplement, especially if you are currently taking medications for blood pressure, diabetes, or other conditions.</div></div></div>
+    <div class="iw-faq-item"><button class="iw-faq-question" onclick="toggleFaq(this)">Can I take AlphaFuel if I'm on blood pressure or diabetes medication?<svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg></button><div class="iw-faq-answer"><div class="iw-faq-answer-inner">AlphaFuel contains natural ingredients with no known interactions with common blood pressure or diabetes medications. However, because it supports nitric oxide production and cardiovascular function, <strong>we strongly recommend speaking with your doctor before starting AlphaFuel if you are on any prescription medications.</strong> Never stop taking any existing medications without first consulting your physician.</div></div></div>
+    <div class="iw-faq-item"><button class="iw-faq-question" onclick="toggleFaq(this)">Why should I order 6 bottles instead of just trying 1 first?<svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg></button><div class="iw-faq-answer"><div class="iw-faq-answer-inner">AlphaFuel works by restoring a biological system — not by forcing a temporary chemical reaction. That means <strong>results build and compound over time.</strong> Dr. Feuerstein recommends a minimum of 3 to 6 months for your eNOS enzymes to fully reactivate and your nitric oxide production to stabilize at optimal levels. The 6-bottle package gives you uninterrupted supply at the deepest discount, with free shipping and $147 worth of bonus guides included. Most men who try 1 bottle first end up ordering more — and sometimes face delays if stock runs low between orders.</div></div></div>
+    <div class="iw-faq-item"><button class="iw-faq-question" onclick="toggleFaq(this)">What if AlphaFuel doesn't work for me? Am I protected?<svg class="iw-faq-chevron" viewBox="0 0 24 24" width="20" height="20"><use href="#chevron"/></svg></button><div class="iw-faq-answer"><div class="iw-faq-answer-inner">Completely. Every order of AlphaFuel — regardless of package size — is covered by a <strong>60-Day "No Questions Asked" Money-Back Guarantee.</strong> If you're unsatisfied for any reason, simply contact the customer support team within 60 Days of your purchase and you'll receive a full refund of every penny. You don't need to give a reason. You don't even need to return the bottles. Your investment is fully protected from the moment you order.</div></div></div>
   </div>
 </section>
 
 <script>
 (function(){
-  // Batch DOM reads before writes to prevent forced reflow
   function toggleFaq(btn){
     var items=document.querySelectorAll('.iw-faq-question');
     var o=btn.classList.contains('open');
-    var h=o?0:btn.nextElementSibling.scrollHeight; // read before any write
+    var h=o?0:btn.nextElementSibling.scrollHeight;
     items.forEach(function(q){q.classList.remove('open');q.nextElementSibling.style.maxHeight=null;});
     if(!o){btn.classList.add('open');btn.nextElementSibling.style.maxHeight=h+'px';}
   }
@@ -1495,30 +1212,16 @@ img { display: inline-block; max-width: 100%; height: auto; vertical-align: midd
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Captura os parâmetros da URL atual (Página B)
-    // Exemplo: ?utm_source=facebook&utm_campaign=vsl_blue_salt
     var urlParams = window.location.search;
-
-    // Se existir algum parâmetro na URL, executa a rotina
     if (urlParams) {
-        
-        // 2. Seleciona todos os links da página (tags <a>)
-        // Se quiser aplicar só aos botões de compra, mude "a" para a classe do botão, ex: ".botao-comprar"
         var links = document.querySelectorAll("a");
-
         links.forEach(function(link) {
             var href = link.getAttribute("href");
-
-            // 3. Ignora links vazios, links âncora (ex: #top) e scripts (ex: javascript:void(0))
             if (href && !href.startsWith("#") && !href.startsWith("javascript") && !href.startsWith("mailto") && !href.startsWith("tel")) {
-                
-                // 4. Verifica se o link de destino (Página C) já possui algum parâmetro
                 if (href.indexOf("?") !== -1) {
-                    // Se o link já tem um '?', trocamos o '?' da URL atual por '&' para não quebrar o link
                     var paramsSemInterrogacao = urlParams.replace("?", "&");
                     link.setAttribute("href", href + paramsSemInterrogacao);
                 } else {
-                    // Se o link está limpo, apenas adicionamos os parâmetros com '?'
                     link.setAttribute("href", href + urlParams);
                 }
             }
